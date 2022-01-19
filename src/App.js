@@ -1,12 +1,17 @@
-import React from 'react';
-import 'App.css'
+import './App.css';
+import Users from "./components/Users/Users";
+import Posts from "./components/Posts/Posts";
+import Comments from "./components/Comments/Comments";
 
-const App = () => {
-  return (
-      <div>
-        
-      </div>
-  );
-};
+function App() {
+
+    return (
+        <div className={'wrap'}>
+            <Users/>
+            <Posts/>
+            <Comments/>
+        </div>
+    );
+}
 
 export default App;

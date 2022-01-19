@@ -1,0 +1,10 @@
+.wrap{
+    display:flex;
+    flex-wrap: wrap;
+    border: solid 2px;
+}
+.part{
+    width: 45%;
+}
+
+
