@@ -1,11 +1,13 @@
 import {useDispatch} from "react-redux";
-import {addCar} from "../store/car.slice";
+import {useForm} from "react-hook-form";
+import {carActions, createCar} from "../store";
 
 const Form = () => {
     const {handleSubmit, register, reset} = useForm();
     const dispatch = useDispatch();
+
     const submit = (data) => {
-        dispatch(addCar)
+        dispatch(createCar({data}))
         reset()
     }
     return(
@@ -19,3 +21,4 @@ const Form = () => {
 
 
 }
+export {Form};
